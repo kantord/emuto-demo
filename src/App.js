@@ -45,11 +45,14 @@ class CustomEditor extends React.Component {
 
 class App extends React.Component {
   state = {
-    QueryCode: `.message`,
+    QueryCode: `[.article.title, .user.name.full_name, .user.age] | { "compressed_article_info": $}`,
     JSONCode: `{
-  "message": "Hello World!"
-}
-`,
+  "user": {
+    "name": {"nickname": "john3", "full_name": "John Doe"},
+    "age": 32
+  },
+  "article": {"title": "Hello World"}
+}`,
   };
 
   onSetJSONCode(JSONCode) {
