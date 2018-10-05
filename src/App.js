@@ -8,6 +8,7 @@ import 'prismjs/themes/prism.css';
 import SplitPane from 'react-split-pane';
 import ObjectInspector from 'react-object-inspector';
 import emuto from 'emuto';
+import debounceRender from 'react-debounce-render';
 
 const Label = ({children}) => (
   <div
@@ -43,6 +44,22 @@ class CustomEditor extends React.Component {
   }
 }
 
+const EmutoOutput = ({QueryCode, JSONCode}) => {
+  try {
+    return (
+      <ObjectInspector
+        data={emuto.default(QueryCode)(
+          JSON.parse(JSONCode),
+        )}
+      />
+    );
+  } catch (e) {
+    return <div className="errorMessage">{e.toString()}</div>;
+  }
+};
+
+const DebouncedEmutoOutput = debounceRender(EmutoOutput);
+
 class App extends React.Component {
   state = {
     QueryCode: `[.article.title, .user.name.full_name, .user.age] | { "compressed_article_info": $}`,
@@ -65,8 +82,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <SplitPane defaultSize="50%" split="vertical">
-        <SplitPane defaultSize="50%" split="horizontal">
+      <SplitPane defaultSize="50%" minSize={300} split="vertical">
+        <SplitPane defaultSize="50%" minSize={150} split="horizontal">
           <div
             style={{
               width: '100%',
@@ -99,19 +116,10 @@ class App extends React.Component {
             margin: '1em',
           }}>
           <Label>Output</Label>
-          {(() => {
-            try {
-              return (
-                <ObjectInspector
-                  data={emuto.default(this.state.QueryCode)(
-                    JSON.parse(this.state.JSONCode),
-                  )}
-                />
-              );
-            } catch (e) {
-              return <div className="errorMessage">{e.toString()}</div>;
-            }
-          })()}
+          <DebouncedEmutoOutput
+            JSONCode={this.state.JSONCode}
+            QueryCode={this.state.QueryCode}
+          />
         </div>
       </SplitPane>
     );

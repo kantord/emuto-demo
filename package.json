@@ -7,6 +7,7 @@
     "emuto": "^1.2.0",
     "prismjs": "^1.15.0",
     "react": "^16.5.2",
+    "react-debounce-render": "^5.0.0",
     "react-dom": "^16.5.2",
     "react-object-inspector": "^0.2.1",
     "react-scripts": "2.0.4",
@@ -24,7 +25,12 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
