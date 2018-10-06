@@ -20,6 +20,7 @@ const Label = ({children}) => (
       borderRadius: '10%',
       padding: '.1em .3em',
       fontSize: '.8em',
+      zIndex: '10',
     }}>
     {children}
   </div>
