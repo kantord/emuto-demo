@@ -7,7 +7,7 @@ import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism.css';
 import SplitPane from 'react-split-pane';
 import ObjectInspector from 'react-object-inspector';
-import emuto from 'emuto/lib/emuto';
+import emuto from 'emuto';
 import debounceRender from 'react-debounce-render';
 
 const Label = ({children}) => (
