@@ -3131,10 +3131,10 @@ emojis-list@^2.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
-emuto@^1.13.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.13.0.tgz#08a73c4cb25c982c69c60ac37b6652d118baac24"
-  integrity sha512-OHIACtIsWrzcgBrYw0UOn2N5lXeq7expSnuUp1doH13ZS7o7Bq6E1Pb7onsKQw6vAzOTz8xqJYQkdLPbmzQnrQ==
+emuto@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.15.0.tgz#da10bb47183fd3fa0320ae99ceebc207c8c52530"
+  integrity sha512-glF0nvkGoVovNfwzKEtLeHnrE4ni53A2hTO1Ur7bgk9d9QAeymI/kb6BB/qoKhKkvGpId+eaG0NCec2b+FQwBw==
   dependencies:
     flow "^0.2.3"
     parsimmon "^1.12.0"

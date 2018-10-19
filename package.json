@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://kantord.github.io/emuto-demo",
   "dependencies": {
-    "emuto": "^1.13.0",
+    "emuto": "^1.15.0",
     "prismjs": "^1.15.0",
     "react": "^16.5.2",
     "react-debounce-render": "^5.0.0",
