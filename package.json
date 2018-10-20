@@ -4,13 +4,13 @@
   "private": true,
   "homepage": "http://kantord.github.io/emuto-demo",
   "dependencies": {
-    "emuto": "^1.13.0",
+    "emuto": "^1.20.0",
     "prismjs": "^1.15.0",
     "react": "^16.5.2",
     "react-debounce-render": "^5.0.0",
     "react-dom": "^16.5.2",
     "react-object-inspector": "^0.2.1",
-    "react-scripts": "2.0.4",
+    "react-scripts": "2.0.5",
     "react-simple-code-editor": "^0.6.1",
     "react-split-pane": "^0.1.84"
   },
