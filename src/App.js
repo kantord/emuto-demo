@@ -47,13 +47,7 @@ class CustomEditor extends React.Component {
 
 const EmutoOutput = ({QueryCode, JSONCode}) => {
   try {
-    return (
-      <ObjectInspector
-        data={emuto(QueryCode)(
-          JSON.parse(JSONCode),
-        )}
-      />
-    );
+    return <ObjectInspector data={emuto(QueryCode)(JSON.parse(JSONCode))} />;
   } catch (e) {
     return <div className="errorMessage">{e.toString()}</div>;
   }
