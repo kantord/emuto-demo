@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://kantord.github.io/emuto-demo",
   "dependencies": {
-    "@babel/core": "7.1.0",
+    "@babel/core": "7.1.2",
     "@svgr/webpack": "3.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
