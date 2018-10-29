@@ -3188,10 +3188,10 @@ emojis-list@^2.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
-emuto@^1.23.0:
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.23.0.tgz#046111a649ab494803261b5c0a15e012b0598bfc"
-  integrity sha512-FB57tImLqrmRdQkXOVuranZFJRfkWe0bYquG4tPRZkSZj1ob/ATe/DUNsCcEji32MdPHGzX01Cer6JFS9XbnnQ==
+emuto@^1.23.1:
+  version "1.23.1"
+  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.23.1.tgz#d3d8114980b0a8e268516127be70f60ad5435833"
+  integrity sha512-8vuQgo9AlY2yK2VqhmyviuBoo3NEg5d7X4h1YChNoEIQghCC+HYv6LafeMhm5bUdL8jZ8cBEcB2WDOYJOOuv+A==
   dependencies:
     "@aureooms/js-itertools" "^3.4.0"
     flow "^0.2.3"
