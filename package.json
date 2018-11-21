@@ -38,7 +38,7 @@
     "pnp-webpack-plugin": "1.2.0",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
-    "postcss-preset-env": "6.3.0",
+    "postcss-preset-env": "6.4.0",
     "postcss-safe-parser": "4.0.1",
     "prismjs": "^1.15.0",
     "react": "^16.6.0",
