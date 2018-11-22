@@ -8123,10 +8123,10 @@ react-object-inspector@^0.2.1:
   resolved "https://registry.yarnpkg.com/react-object-inspector/-/react-object-inspector-0.2.1.tgz#8ec32951bde8c76b072ef084a74e7a9d2d0aeb72"
   integrity sha1-jsMpUb3ox2sHLvCEp056nS0K63I=
 
-react-simple-code-editor@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.6.1.tgz#16ad5fe381e36e9a8a965151ef2332cc48f28ab5"
-  integrity sha512-kWaps6fF+KhJY8J0cnQfBpb3yDmKn4K+8ESV983baD5jveZUnjFjb7hG5SbKflA/oPkBIpfZH5y1Qbj5ROh51Q==
+react-simple-code-editor@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.7.1.tgz#9fce45d31ec4db3077a46d489d6e43a125a98726"
+  integrity sha512-AgvT7j7UfFa7b/DRDvFad6Y9/bda8ogXKG2ozElCWbWWj3itu05LS7bmLu63ohjfJDTWbm9Kq0PwIdL7pw3mBg==
 
 react-split-pane@^0.1.84:
   version "0.1.84"
