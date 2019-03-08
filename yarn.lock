@@ -3646,10 +3646,10 @@ emojis-list@^2.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
-emuto@^1.33.0:
-  version "1.33.0"
-  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.33.0.tgz#2cc8c5bcf2c1dc9704701b266d53fbad3ac4b6e8"
-  integrity sha512-c1Xk8N3VZ00ZQPnnYWkN94vndxHYstD8KoztJ6kJqONjowUwMEwFuBYPUJ03qs0xn0sQGAv92CPCfpihkKjvVg==
+emuto@^1.36.0:
+  version "1.36.0"
+  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.36.0.tgz#e2d418af982ed7c4b24ad747003ccb3ac61dc010"
+  integrity sha512-roI2Pzcc/JunjLAyRNlCPRVySXMvODyYX4xc4i6OYuebXQjV49G5JqsA4m5T63ZOwz0zJB8XOcAZypVT2e0otw==
   dependencies:
     cartesian-product-generator "^1.1.0"
     combinations-generator "^1.0.1"
