@@ -9,6 +9,7 @@ import SplitPane from 'react-split-pane';
 import ObjectInspector from 'react-object-inspector';
 import emuto from 'emuto';
 import debounceRender from 'react-debounce-render';
+import beautify from 'json-beautify';
 
 const Label = ({children}) => (
   <div
@@ -47,7 +48,18 @@ class CustomEditor extends React.Component {
 
 const EmutoOutput = ({QueryCode, JSONCode}) => {
   try {
-    return <ObjectInspector data={emuto(QueryCode)(JSON.parse(JSONCode))} />;
+    const result = emuto(QueryCode)(JSON.parse(JSONCode));
+    try {
+      return (
+        <CustomEditor
+          code={beautify(result, null, 2)}
+          language={languages.json}
+          onValueChange={() => {}}
+        />
+      );
+    } catch (e) {
+      return <ObjectInspector data={result} />;
+    }
   } catch (e) {
     return <div className="errorMessage">{e.toString()}</div>;
   }
