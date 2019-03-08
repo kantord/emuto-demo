@@ -89,8 +89,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <SplitPane defaultSize="50%" minSize={300} split="vertical">
-        <SplitPane defaultSize="50%" minSize={150} split="horizontal">
+      <SplitPane defaultSize="55%" minSize={300} split="vertical">
+        <SplitPane defaultSize="20%" minSize={150} split="horizontal">
           <div
             style={{
               width: '100%',
