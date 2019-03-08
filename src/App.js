@@ -10,6 +10,7 @@ import ObjectInspector from 'react-object-inspector';
 import emuto from 'emuto';
 import debounceRender from 'react-debounce-render';
 import beautify from 'json-beautify';
+import JSONCode from './input.json';
 
 const Label = ({children}) => (
   <div
@@ -38,24 +39,39 @@ class CustomEditor extends React.Component {
         style={{
           fontFamily: '"Fira code", "Fira Mono", monospace',
           fontSize: 12,
-          width: '100%',
-          height: '100%',
         }}
       />
     );
   }
 }
 
+const Scroll = ({children}) => (
+  <div
+    style={{
+      position: 'absolute',
+      top: '0',
+      left: '0',
+      right: '0',
+      bottom: '0',
+      overflow: 'auto',
+    }}>
+    {children}
+  </div>
+);
+
 const EmutoOutput = ({QueryCode, JSONCode}) => {
   try {
     const result = emuto(QueryCode)(JSON.parse(JSONCode));
+    console.log(result);
     try {
       return (
-        <CustomEditor
-          code={beautify(result, null, 2)}
-          language={languages.json}
-          onValueChange={() => {}}
-        />
+        <Scroll>
+          <CustomEditor
+            code={beautify(result, null, 2)}
+            language={languages.json}
+            onValueChange={() => {}}
+          />
+        </Scroll>
       );
     } catch (e) {
       return <ObjectInspector data={result} />;
@@ -69,14 +85,15 @@ const DebouncedEmutoOutput = debounceRender(EmutoOutput);
 
 class App extends React.Component {
   state = {
-    QueryCode: `[.article.title, .user.name.full_name, .user.age] | { "compressed_article_info": $}`,
-    JSONCode: `{
-  "user": {
-    "name": {"nickname": "john3", "full_name": "John Doe"},
-    "age": 32
-  },
-  "article": {"title": "Hello World"}
-}`,
+    QueryCode: `$ { producer, title, ...Stats }
+
+where
+  $Stats = ($ => {
+      "characters": ($.characters | length),
+      "starships": ($.starships | length),
+      "planets": ($.planets | length)
+    })`,
+    JSONCode: beautify(JSONCode, null, 2),
   };
 
   onSetJSONCode(JSONCode) {
@@ -96,24 +113,28 @@ class App extends React.Component {
               width: '100%',
               height: '100%',
             }}>
-            <Label>Query</Label>
-            <CustomEditor
-              code={this.state.QueryCode}
-              language={languages.clike}
-              onValueChange={this.onSetQueryCode.bind(this)}
-            />
+            <Scroll>
+              <Label>Query</Label>
+              <CustomEditor
+                code={this.state.QueryCode}
+                language={languages.clike}
+                onValueChange={this.onSetQueryCode.bind(this)}
+              />
+            </Scroll>
           </div>
           <div
             style={{
               width: '100%',
               height: '100%',
             }}>
-            <Label>Input</Label>
-            <CustomEditor
-              code={this.state.JSONCode}
-              language={languages.json}
-              onValueChange={this.onSetJSONCode.bind(this)}
-            />
+            <Scroll>
+              <Label>Input</Label>
+              <CustomEditor
+                code={this.state.JSONCode}
+                language={languages.json}
+                onValueChange={this.onSetJSONCode.bind(this)}
+              />
+            </Scroll>
           </div>
         </SplitPane>
         <div
