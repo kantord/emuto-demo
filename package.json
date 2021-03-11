@@ -46,7 +46,7 @@
     "react": "^16.8.3",
     "react-app-polyfill": "^0.2.1",
     "react-debounce-render": "^5.0.0",
-    "react-dev-utils": "^7.0.3",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.3",
     "react-object-inspector": "^0.2.1",
     "react-simple-code-editor": "^0.9.3",
