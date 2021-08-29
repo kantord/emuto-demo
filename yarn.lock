@@ -2989,10 +2989,10 @@ capture-exit@^2.0.0:
   dependencies:
     rsvp "^4.8.4"
 
-cartesian-product-generator@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/cartesian-product-generator/-/cartesian-product-generator-1.1.0.tgz#8bc32b44b7406eeadac5acfbeb42d6a1acfa433c"
-  integrity sha512-wKHdWUaIrqY4lgnmyCN5Oac0Xb1+Fvo6vUrsrEuRvpO/RTKrqFmZACDDNTctRBnuqnSNc/D0fsBuqYxi13ltOg==
+cartesian-product-generator@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/cartesian-product-generator/-/cartesian-product-generator-1.1.1.tgz#5919a8ce051580b1a33238548e9260c98730ed00"
+  integrity sha512-d1KAzT8CO4l3HffHix9LyCInTek6cifNNH3HqT7YeaHDnjNas6wOgd/w2p2aPJQL0pmUS6Z0hb8r42Ch0E0CIA==
   dependencies:
     ind2sub "^2.0.0"
 
@@ -4164,15 +4164,15 @@ emojis-list@^2.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
-emuto@^1.36.0:
-  version "1.36.0"
-  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.36.0.tgz#e2d418af982ed7c4b24ad747003ccb3ac61dc010"
-  integrity sha512-roI2Pzcc/JunjLAyRNlCPRVySXMvODyYX4xc4i6OYuebXQjV49G5JqsA4m5T63ZOwz0zJB8XOcAZypVT2e0otw==
+emuto@^1.43.0:
+  version "1.43.0"
+  resolved "https://registry.yarnpkg.com/emuto/-/emuto-1.43.0.tgz#6accf7bc433a9dd4144ba4b8f901e25f4ac3c102"
+  integrity sha512-zAdn2Gwrr0HN2DISAdtIaqfNWN7C6BnD6KBD67fs7YItTzZJhrC39yARkIBxVswSy+HRaXBctiSAOToRzJxx7Q==
   dependencies:
-    cartesian-product-generator "^1.1.0"
+    cartesian-product-generator "^1.1.1"
     combinations-generator "^1.0.1"
-    flow "^0.2.3"
-    parsimmon "^1.12.0"
+    lodash.merge "^4.6.2"
+    parsimmon "^1.13.0"
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -4856,11 +4856,6 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
   integrity sha1-2uRqnXj74lKSJYzB54CkHZXAN4I=
-
-flow@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/flow/-/flow-0.2.3.tgz#f8da65efa249127ec99376a28896572a9795d1af"
-  integrity sha1-+Npl76JJEn7Jk3aiiJZXKpeV0a8=
 
 flush-write-stream@^1.0.0:
   version "1.0.3"
@@ -6892,6 +6887,11 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
+lodash.merge@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -7857,10 +7857,10 @@ parseurl@~1.3.2:
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
   integrity sha1-/CidTtiZMRlGDBViUyYs3I3mW/M=
 
-parsimmon@^1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/parsimmon/-/parsimmon-1.12.0.tgz#886a442fb30b5fc3c8e7c4994050f5cdcfe0ea90"
-  integrity sha512-uC/BjuSfb4jfaWajKCp1mVncXXq+V1twbcYChbTxN3GM7fn+8XoHwUdvUz+PTaFtDSCRQxU8+Rnh+iMhAkVwdw==
+parsimmon@^1.13.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/parsimmon/-/parsimmon-1.18.0.tgz#21db143f6e6386237394caf7ee94722879c54b5f"
+  integrity sha512-EtVsGuQfDgwGgXzsSDe+5egRPwbcgKRd/omQ1L3Oj2pHy0gYqd+Q7zrBIQ7P/BN6DWUP9vV45HIgZHCmssdzMg==
 
 pascalcase@^0.1.1:
   version "0.1.1"
